@@ -1,0 +1,653 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    /* 가장 굵은 굵기 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    /* 일반 굵기, 400과 동일 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    /* 가장 가는 굵기 */
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'afterglow', serif;
+    src: url(../font/Afterglow-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+.castoro-regular {
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+/* ----- 메인 360 ----- */
+#wrap{
+    width:100%;
+    min-width:360px;
+}
+
+
+/* ----- seection01 main 360 ----- */
+.secMain{
+    width:100%;
+    height:100vh;
+    position: relative;
+    background-color:#F3EEE8;
+}
+
+.secMain_TxtBox{
+    width:90%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.TxtBox_Tit{
+    font-family: 'afterglow',"Castoro", serif;
+    font-size:48px;
+    line-height: 120%;
+    margin-bottom:10px;
+}
+
+.TxtBox_SubTit{
+    font-size:16px;
+    line-height:20px;
+    font-weight:400;
+    letter-spacing: -0.6px;
+}
+
+.TxtBox_Tit span{
+    font-style:italic;
+    position: relative;
+}
+
+.TxtBox_Tit span em{
+    display:block;
+    width:0; 
+    height:4px;
+    background:#222;
+    position:absolute;
+    bottom:5px;
+    left:0;
+    animation:portBar 0.4s linear 1s forwards;
+}
+
+.secMain_Arrow{
+    width:60px;
+    height:auto;
+    position: absolute;
+    top:75%;
+    left:50%;
+    transform: translateX(-50%);
+    transition:all 3s;
+}
+
+.secMain_Arrow.move{
+    top:93%; 
+}
+
+.secMain_Arrow img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+
+/* seection01 main 800 */
+@media (min-width: 800px) {
+    .secMain_TxtBox{
+        top:45%;
+    }
+    .TxtBox_Tit{
+        font-size:80px;
+    }
+}
+
+/* seection01 main 1200 */
+@media (min-width: 1200px) {
+    /* .secMain{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0 3vw;
+    }
+
+    .secMain_TxtBox{
+        width:auto;
+        position:static;
+        transform: translate(0,0);
+    }
+
+    .TxtBox_Tit{
+        font-size:140px;
+        margin-bottom:20px;
+    }
+
+    .TxtBox_SubTit{
+        font-size:24px;
+        line-height:30px;
+    }
+
+    .TxtBox_Tit span em{
+        height:8px;
+    }
+
+    .secMain_Arrow{
+        width:130px;
+        position: static;
+        transform: translateX(0);
+    } */
+
+    .TxtBox_Tit{
+        font-size:140px;
+        margin-bottom:20px;
+    }
+
+    .TxtBox_SubTit{
+        font-size:24px;
+        line-height:30px;
+    }
+
+    .TxtBox_Tit span em{
+        height:8px;
+    }
+
+    .secMain_Arrow{
+        width:110px;
+    }
+}
+
+
+
+/* ----- seection02 intro 360 ----- */
+.secIntro{
+    width:100%;
+    padding:80px 30px 80px;
+    background-color:#ECE9E3;
+}
+
+.secIntro_tit{
+    font-size: 7.2vw;
+    font-weight:700;
+    line-height:140%;
+}
+
+.secIntro_subTit{
+    margin-top:80px;
+    font-size:16px;
+    line-height:140%;
+    letter-spacing: -0.5px;
+}
+
+.secIntro_subTit p{
+    margin-bottom:30px;
+}
+
+.secIntro_subTit p:last-child{
+    margin-bottom:0;
+}
+
+
+/* seection02 intro 800 */
+@media (min-width: 800px) {
+    .secIntro{
+        padding:80px 3vw 80px;
+    }
+    
+    .secIntroInner{
+        margin:0 auto;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .secIntro_tit{
+        font-size: 3.2vw;
+        width:44%;
+    }
+
+    .secIntro_subTit{
+        width: 56%;
+        margin-top:0;
+    }
+
+    .secIntro_subTit p{
+        margin-bottom:50px;
+    }
+}
+
+/* seection02 intro 1200 */
+@media (min-width: 1200px) {
+    .secIntro{
+        padding:200px 0 60px;
+    }
+
+    .secIntroInner{
+        max-width:1400px;
+    }
+
+    .secIntro_tit{
+        font-size:50px;
+    }
+
+    .secIntro_subTit{
+        font-size:24px;
+        line-height:160%;
+        letter-spacing: 0px;
+    }
+
+    .secIntro_subTit p{
+        margin-bottom:50px;
+    }
+}
+
+
+
+
+/* ----- seection03 info 360 ----- */
+.secInfo{
+    width:100%;
+    padding:80px 30px;
+    background-color:#ECE9E3;
+}
+
+.secInfo_LB{
+    width:90%;
+    margin:0 5% 10%;
+}
+
+.secInfo_LB img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+.secInfo_RB > div{
+    border-top:2px solid #222;
+    padding-top:30px;
+    margin-top:30px;
+}
+
+.secInfo_RB_tit{
+    margin-bottom:10px;
+    font-size:26px;
+    line-height:120%;
+    font-weight:600;
+}
+
+.RB_contBox{
+    width:100%;
+}
+
+.RB_contBox caption{
+    display:none;
+}
+
+.RB_contBox tbody tr{
+    margin-bottom:20px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+}
+
+.RB_contBox tbody .RB_contBox_date{
+    font-size:14px;
+    line-height:20px;
+    color:#888;
+}
+
+.RB_contBox tbody td{
+    font-size:16px;
+    line-height:20px;
+    color:#222;
+    margin-bottom:5px;
+    letter-spacing: -0.5px;
+}
+
+.RB_contBox tbody td > p:last-child{
+    color:#666;
+    margin-top:5px;
+}
+
+
+
+/* seection03 info 800 */
+@media (min-width: 800px) {
+    .secInfoInner{
+        height:100%;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .secInfo_LB{
+        width: 36%;
+        height:26vh;
+        margin:0;
+        position:-webkit-sticky;
+        position:sticky;
+        top:0;
+    }
+
+    .secInfo_RB{
+        width:56%;
+    }
+
+    .RB_contBox tbody td{
+        letter-spacing: 0px;
+    }
+    
+}
+
+/* seection03 info 1200 */
+@media (min-width: 1200px) {
+    .secInfoInner{
+        max-width:1400px;
+        height:100%;
+        margin:0 auto;
+    }
+
+    .secInfo_LB{
+        width: 30%;
+        height:35vh;
+    }
+
+    .secInfo_RB{
+        width:56%;
+    }
+
+    .secInfo_RB_tit{
+        margin-bottom:20px;
+        font-size:32px;
+    }
+
+    .RB_contBox tbody tr{
+        margin-bottom:10px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .RB_contBox tbody .RB_contBox_date{
+        font-size:18px;
+        line-height:26px;
+        width:25%;
+    }
+    
+    .RB_contBox tbody td{
+        font-size:18px;
+        line-height:26px;
+    }
+
+    .RB_contBox tbody td > p{
+        display:inline-block;
+    }
+
+    .RB_contBox tbody td > p:last-child{
+        margin-bottom:0px;
+    }
+}
+
+
+
+/* ----- seection04 works 360 ----- */
+.secWorks{
+    background-color: #151515;
+    padding:60px 30px;
+}
+
+.secWorksTit{
+    font-family: 'afterglow',"Castoro", serif;
+    font-size:14vw;
+    line-height: 120%;
+    margin-bottom:30px;
+    color:#ECE9E3;
+}
+
+.secWorksWrap li{
+    width:100%;
+    height:62.22vw;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom:30px;
+}
+
+.secWorksWrap li a{
+    display:inline-block;
+    width:100%;
+    height:62.22vw;
+    transition: all 0.5s;
+    position:relative;
+}
+
+.secWorksWrap li a .secWorksWrap_txt{
+    width:100%;
+    height:62.22vw;
+    background-color:rgba(34,34,34, 0.4);
+    position:absolute;
+    top:0;
+    left:0;
+    transition: all 0.3s;
+}
+
+.secWorksWrap_txt p{
+    width:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:5vw;
+    font-weight: 500;
+    color:#fff;
+    text-align: center;
+}
+
+.secWorksWrap img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+
+
+
+
+/* seection04 works 800 */
+@media (min-width: 800px) {
+    .secWorks{
+        padding:100px 3vw;
+    }
+
+    .secInfoInner{
+        max-width:1400px;
+        height:100%;
+        margin:0 auto;
+    }
+    .secWorksTit{
+        font-size:120px;
+        margin-bottom:80px;
+    }
+
+    .secWorksWrap{
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        column-gap:3%;
+        row-gap : 3vw;
+    }
+
+    .secWorksWrap li{
+        width:31%;
+        height:22vw;
+        margin-bottom:0;
+    }
+
+    .secWorksWrap li a{
+        height:22vw;
+    }
+    
+    .secWorksWrap li a .secWorksWrap_txt{
+        height:22vw;
+    }
+    
+    .secWorksWrap_txt p{
+        font-size:1.6vw;
+    }
+}
+
+/* seection04 works 1200 */
+@media (min-width: 1200px) {
+    .secWorksWrap li a .secWorksWrap_txt{
+        height:22vw;
+        background-color:rgba(34,34,34, 0.6);
+        opacity:0;
+    }
+
+    .secWorksWrap_txt p{
+        font-size:1.2vw;
+    }
+
+    .secWorksWrap li a:hover .secWorksWrap_txt{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- 공통 코드 ----- */
+.fw600{
+    font-weight:600;
+}
+
+
+/* ------ mob, pc용 구분 360 ------ */
+.moNonView{
+    display:none;
+}
+
+.tabView{
+    display:none;
+}
+
+/* mob, pc용 구분 800 */
+@media (min-width: 800px) {
+    .tabView{
+        display:block;
+        display:inline;
+    }
+
+    .tabNonView{
+        display:none;
+    }
+}
+
+/* mob, pc용 구분 1200 */
+@media (min-width: 1200px) {
+    .moNonView{
+        display:block;
+    }
+
+    .pcNonView{
+        display:none;
+    }
+}
+
+
+
+
+
+/* ----- keyframes ----- */
+@keyframes portBar{
+    100% {width:100%;}
+}
+
+@keyframes arrowOpacity {
+    0% {
+      opacity:0
+    }
+  
+    50% {
+        opacity:1;
+        top:84%
+    }
+  
+    100% {
+        opacity:0.2
+    }
+  }
+
+
+@keyframes contactAni{
+    0% {left:-400px; }
+    100% {left:0; }
+}
+
+
+
+

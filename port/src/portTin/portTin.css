@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    /* 가장 굵은 굵기 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    /* 일반 굵기, 400과 동일 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    /* 가장 가는 굵기 */
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'afterglow', serif;
+    src: url(../font/Afterglow-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+.castoro-regular {
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ----- 메인 360 ----- */
+#wrap{
+    width:100%;
+    min-width:360px;
+}
+
+
+/* ----- seection01 main 360 ----- */
+
+/* .secMain img{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+} */
+
+.secMain{
+    width:100%;
+    height:138vw;
+    background-image: url(images/portTin_mainMob.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/* seection01 main 1000 */
+@media (min-width: 1000px) {
+    .secMain{
+        height:52vw;
+        background-image: url(images/portTin_mainPc.png);
+    }
+}
+
+
+/* ----- seection02 main info 360 ----- */
+.secMainInfo{
+    width:100%;
+}
+
+.secMainInfoInner{
+    width:100%;
+    margin:0 auto;
+    padding: 80px 30px;
+}
+
+.secMainInfo_tit{
+    font-size:36px;
+    line-height:120%;
+    margin-bottom:60px;
+}
+
+.secMainInfo_table caption{
+    display:none;
+}
+
+.secMainInfo_table{
+    width:100%;
+}
+
+.secMainInfo_table tr{
+    margin-bottom:20px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.secMainInfo_table tr .tableBox_tit{
+    width:32%;
+    font-size:16px;
+    line-height:24px;
+    font-weight:700;
+}
+
+.secMainInfo_table tr td:last-child{
+    width: 68%;
+    font-size:16px;
+    line-height:24px;
+}
+
+.secMainInfo_txt{
+    margin-top:40px;
+    font-size:16px;
+    line-height:160%;
+    text-align: justify;
+}
+
+.siteBtn a{
+    display:inline-block;
+    margin-top:50px;
+    padding: 18px 50px 18px 24px;
+    font-size:16px;
+    color:#111;
+    border:1px solid #222;
+    background-color:#fff;
+    background-image:url(images/siteBtnArrow_black.png);
+    background-repeat:no-repeat;
+    background-position:136px center;
+    background-size: 16px 12px;
+    transition: all 0.3s;
+}
+
+.siteBtn a:hover{
+    color:#fff;
+    background-color:#111;
+    background-image:url(images/siteBtnArrow_white.png);
+}
+
+
+/* seection02 main info 1000 */
+@media (min-width: 1000px) {
+    .secMainInfoInner{
+        max-width:1000px;
+        padding: 140px 0;
+    }
+
+    .secMainInfo_tit{
+        font-size:46px;
+        letter-spacing: -0.5px;
+    }
+
+    .secMainInfo_table tr{
+        margin-bottom:12px;
+        display:flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .secMainInfo_table tr .tableBox_tit{
+        width:12%;
+        font-size:16px;
+        line-height:24px;
+        font-weight:700;
+    }
+    
+    .secMainInfo_table tr td:last-child{
+        width: 88%;
+        font-size:16px;
+        line-height:24px;
+    }
+}
+
+
+/* ----- seection03 secPreview 360 ----- */
+.secPreview{
+    background-color:#E7E7E7;
+    padding: 60px 30px;
+}
+
+.secPreview div{
+    width:100%;
+    margin:0 auto;
+}
+
+.secPreview div img{
+    width:100%;
+    height:auto;
+}
+
+/* seection03 secPreview 1000 */
+@media (min-width: 1000px) {
+    .secPreview{
+        padding: 140px 0;
+    }
+    
+    .secPreview div{
+        max-width:1000px;
+        margin:0 auto;
+    }
+    
+    .secPreview div img{
+        width:100%;
+        height:auto;
+    }
+}
+
+/* ----- seection04 secDesignConcept 360 ----- */
+.secDesignConcept{
+    width:100%;
+    padding:80px 0;
+}
+
+.secDesignConceptInner{
+    margin:0 auto;
+}
+
+
+.secDesignConcept_img{
+    margin:100px auto 0;
+    width:100%;
+}
+
+.secDesignConcept_img p{
+    margin-bottom:80px;    
+}
+
+.secDesignConcept_logo{
+    width:100%;
+    padding:0 30px;
+}
+
+.secDesignConcept_img img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+/* seection04 secDesignConcept 1000 */
+@media (min-width: 1000px) {
+    .secDesignConcept{
+        padding:140px 0;
+    }
+
+    .secDesignConceptInner{
+        max-width:1000px;
+    }
+
+    .secDesignConcept_logo{
+        width:720px;
+        margin:0 auto;
+        padding:0 0;
+    }
+    
+}
+
+
+/* ----- seection05 secViewcode 360 ----- */
+.secViewcode{
+    width:100%;
+    background-color: #E7E7E7;
+}
+
+.secViewcodeInner{
+    padding:60px 0;
+    margin:0 auto;
+}
+
+.secViewcode_img{
+    width:90%;
+    margin: 90px auto 0;
+}
+
+.secViewcode_img img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+/* seection05 secViewcode 1000 */
+@media (min-width: 1000px) {
+    .secViewcodeInner{
+        max-width:1000px;
+        padding:140px 0;
+    }
+
+    .secViewcode_img{
+        width:100%;
+    }
+}
+
+
+
+/* ----- seection06 secMockupImg 360 ----- */
+.secMockupImg{
+    width:100%;
+}
+
+.secMockupImg div{
+    width:100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+}
+
+.secMockupImg img{
+    width:180%;
+    height:auto;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+/* seection06 secMockupImg 1000 */
+@media (min-width: 1000px) {
+    .secMockupImg img{
+        width:110%;
+    }
+}
+
+
+
+
+
+
+
+
+/* ---------- 공통 코드 ---------- */
+
+/* ------ tit공통 360 ------ */
+.secTitBox{
+    padding: 0 30px;
+}
+
+.secTitBox_tit{
+    font-size:40px;
+    font-weight:700;
+    line-height:120%;
+    margin-bottom:40px;
+}
+
+.secTitBox_sub{
+    font-size:16px;
+    line-height:140%;
+    text-align: justify;
+}
+
+/* tit공통 1000 */
+@media (min-width: 1000px) {
+    .secTitBox{
+        padding: 0 0;
+    }
+
+    .secTitBox_tit{
+        font-size:50px;
+        line-height:110%;
+        margin-bottom:30px;
+    }
+}
+
+
+
+
+
+/* ------ mob, pc용 구분 360 ------ */
+.moNonView{
+    display:none;
+}
+
+/* mob, pc용 구분 800 */
+@media (min-width: 1000px) {
+    .tabNonView{
+        display:none;
+    }
+}
+
+/* mob, pc용 구분 1000 */
+@media (min-width: 1000px) {
+    .moNonView{
+        display:block;
+    }
+
+    .pcNonView{
+        display:none;
+    }
+}

@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+#wrap{width:100%; min-width:320px;}
+
+/* ---------- #header 영역 ---------- */
+#header{height:50px; /*background:#cee; */position:relative; }
+
+.logo{width:106px; height:50px; margin:0 auto; }
+.logo a{display:block; text-indent:-9999px; height:50px; 
+    background-image:url(../img/m_logo.png); background-repeat:no-repeat;
+    background-position:center; background-size:auto 19px; }
+
+.btnMenu{width:50px; height:50px; position:absolute; top:0; left:0; }
+.btnMenu a{display:block; text-indent:-9999px; height:50px; 
+    background-image:url(../img/m_openmenu.png); background-repeat:no-repeat;
+    background-position:center; background-size:auto 50px; }
+
+.btnSearch{width:50px; height:50px; position:absolute; top:0; right:0; }
+.btnSearch a{display:block; text-indent:-9999px; height:50px; 
+    background-image:url(../img/m_search.png); background-repeat:no-repeat; 
+    background-position:center; background-size:auto 50px; }
+
+
+.side{width:260px; height:100%; background:#333; position:fixed; left:-260px; top:0; z-index:600; }
+.side .gnb{padding-top:50px; background:#fff; }
+.side .gnb li{border-top:1px solid #999; }
+.side .gnb li:last-child{border-bottom:1px solid #555; }
+.side .gnb li .m{display:block; width:180px; padding:15px 20px; font-weight:bold; 
+    font-size:14px; color:#555;  position:relative;}
+.side .gnb li .m i{display:block; position:absolute; top:45%; right:0; 
+    width:6px; height:6px; border-top:2px solid #555; border-right:2px solid #555;
+    transform:rotate(135deg); transition:all 0.3s; }
+
+.side .gnb li .m.on{color:#a7754c; }
+.side .gnb li .m.on i{transform:rotate(-45deg); border-top:2px solid #a7754c; border-right:2px solid #a7754c;}
+
+.side .gnb li .sub{display:none;}
+.side .gnb li .sub li a{display:block; padding:15px 30px; color:#555;}
+
+.side .utill li a{display:block; padding:15px 20px; color:#fff; font-size:14px; }
+
+.side .btnClose{width:50px; height:50px; position:absolute; top:0; left:0;  }
+.side .btnClose a{display:block; text-indent:-9999px; height:50px; 
+    background-image:url(../img/m_closemenu.png); background-repeat:no-repeat; 
+    background-position:center; background-size:auto 50px; transition:all 0.3s; }
+.side .btnClose a:hover{transform:rotate(180deg);}
+
+.blackBg{width:100%; height:100%; background:#000; opacity:0.5; z-index:300; position:fixed; top:0; left:0; display:none;  }
+
+
+/* ---------- #mainSlider 영역 ---------- */
+#mainSlider{position:relative; }
+#mainSlider li a{display:block; }
+#mainSlider li a img{width:100%; height:auto;}
+
+#mainSlider .bx-pager{position:absolute; bottom:20px; left:50%; transform:translateX(-50%);}
+#mainSlider .bx-pager div{display:inline-block; margin:0 5px; }
+#mainSlider .bx-pager div a{display:block; text-indent:-9999px; 
+    width:10px; height:10px; border-radius:50%; background:#fff; opacity:0.6;}
+#mainSlider .bx-pager div .active{background:#a7754c; }
+
+/* ---------- #container 본문 영역 ---------- */
+#container{}
+h2{font-size:4.375vw; line-height:1.3em; font-weight:500; color:#a42420;}
+.subTit{font-size:5vw;  line-height:1.3em; color:#555; margin:7px 0 17px 0; }
+
+/* 1 bestItem 영역 */
+.bestItem{padding:35px 0; text-align:center; 
+    background:url(../img/m_bestitem_bg.png) repeat-x center 0; 
+    position:relative; }
+.bestItem span{display:block; width:1px; height:25px; background:#666; 
+    margin:0 auto 15px;}
+
+.bestItem .item{font-size:3.75vw; line-height:1.3em; color:#666;}
+.bestItem .item p{font-size:3.75vw; line-height:1.3em; color:#666; 
+    margin-bottom:4.6875%; }
+.bestItem .item .nameE{font-weight:500; color:#a7754c; margin-bottom:2.5%; }
+.bestItem .item .nameK{font-size:5.625vw; }
+
+.bestItem .item .color{width:47.5%; height:6.25%; margin:0 auto; }
+.bestItem .item .color img{width:100%; height:auto; }
+
+.bestItem .photo a{display:block; width:68.75%; height:56.875%; margin:30px auto; }
+.bestItem .photo img{width:100%; height:auto;}
+
+.bestItem .bx-pager{position:absolute; bottom:20px; left:50%; transform:translateX(-50%);}
+.bestItem .bx-pager div{float:left; margin:0 6px; }
+.bestItem .bx-pager div a{display:block; text-indent:-9999px; width:10px; height:10px; border-radius:12px; border:1px solid #a7754c; opacity:0.4; }
+.bestItem .itemSlider .bx-pager div a:hover{background:#a7754c;}
+.bestItem .itemSlider .bx-pager div .active{opacity:1; background:#a7754c;}
+
+
+/* 2 instaReview 영역 */
+.instaReview{text-align:center; margin:35px 15px;  }
+
+.instaReview .insta{}
+.instaReview .insta li{float:left; margin-right:4%; width:48%;  }
+.instaReview .insta li:last-child{margin-right:0;}
+.instaReview .insta li img{width:100%; height:auto; }
+
+
+/* 3 adBn 영역 */
+.adBn img{width:100%; height:auto;  }
+
+
+/* 4 movie 영역 */
+.movie{padding:35px 15px; position:relative; 
+    background:url(../img/m_moviebg.png) no-repeat 0 0/cover; }
+
+.movie .tit{color:#a7754c; }
+.movie .subTit{color:#dda55f;}
+.movie .info{font-size:4.375vw; line-height:1.3em; color:#fde1bd;
+    margin-bottom:30px; }
+
+.movie .photo{position:absolute; top:35px; right:20px;
+    width:11.724%; height:36.206%;}
+.movie .photo img{width:100%; height:auto;}
+
+.movie .adMovie{height:260px; }
+
+
+/* 5 bransStory 영역 */
+.bransStory img{width:100%; height:auto; }
+
+/* ---------- #footer 영역 ---------- */
+#footer{margin:20px auto; text-align:center; }
+
+.fsns{}
+.fsns li{display:inline-block; margin:0 5px; }
+.fsns li a{display:block; text-indent:-9999px; width:40px; height:40px; 
+    background-image:url(../img/m_fsns.jpg); background-repeat:no-repeat;
+    background-size:auto 40px;}
+
+.fsns li:nth-child(2) a{background-position:-50px 0;}
+.fsns li:nth-child(3) a{background-position:-100px 0;}
+.fsns li:nth-child(4) a{background-position:-150px 0;}
+
+.fmenu{margin:15px 0; }
+.fmenu li{display:inline-block; margin-right:7px; }
+.fmenu li a{color:#666; font-size:12px; }
+.fmenu li:nth-child(3) a{color:#444; font-weight:500; }
+.fmenu li:after{content:""; display:inline-block; width:1px; height:12px; 
+    background:#666; margin-left:7px; }
+.fmenu li:last-child:after{display:none;}
+
+.svc{font-size:12px;color:#666; margin-bottom:10px; }
+.svc strong{color:#a7754c; }
+.copy{font-size:10px; color:#aaa; }

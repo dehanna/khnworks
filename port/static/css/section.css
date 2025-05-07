@@ -1,0 +1,378 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    /* 가장 굵은 굵기 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    /* 일반 굵기, 400과 동일 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    /* 가장 가는 굵기 */
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'afterglow', serif;
+    src: url(../font/Afterglow-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+.castoro-regular {
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+/* ---------- header ---------- */
+/* ----- header 360 ----- */
+header{
+    width:100%;
+    min-width:360px;
+    height: 80px;
+    padding:0 30px; 
+    background-color:rgba(255, 255, 255, 0.1);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.header_tit{
+    width:80px;
+}
+
+.header_tit img{
+    width:98%;
+    height:auto;
+    object-fit: cover;
+}
+
+.header_contact button{
+    padding:8px 10px;
+    display: inline-block;
+    font-size: 14px;
+    color:#fff;
+    text-align: center;
+    background-color:#111;
+    border-radius:30px;
+    transition: all 0.2s;
+}
+
+/* header 800 */
+@media (min-width: 800px) {
+    header{
+        height: 60px;
+        padding:0 3vw;
+    }
+    
+    .header_tit{
+        width:60px;
+    }
+
+    .header_contact button:hover{
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+}
+
+
+
+
+/* ----- click header 360 ----- */
+.headerScreenBg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 997;
+    background:#191919; 
+    display:none;
+}
+
+.headerMenu{
+    display:none;
+    opacity:1;
+    width:100%;
+    min-width:360px;
+    position:fixed;
+    top:0;
+    left:0; 
+    z-index: 998;
+}
+
+.headerMenuInner{
+    width:100%;
+    height:100vh;
+    padding:0 30px;
+    margin:auto auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerMenu_txt{
+    margin-bottom:40vw;
+    font-size:14px;
+    color:#888;
+}
+
+.headerMenu_txt p:first-child{
+    font-family: 'afterglow','Castoro', serif;
+    font-size:48px;
+    line-height: 120%;
+    margin-bottom:30px;
+    color:#fff;
+}
+
+.headerMenu_infoTit{
+    font-size:26px;
+    line-height:120%;
+    color:#fff;
+    margin-bottom:50px;
+}
+
+.headerMenu_infoTxt{
+    font-size:14px;
+    line-height:140%;
+    color:#888;
+    margin-bottom:30px;
+}
+
+.headerMenu_infoTxt p:last-child a{
+    font-size:24px;
+    line-height:160%;
+    color:#fff;
+    position: relative;
+    display:block;
+    width:300px;
+    height:36px; 
+    overflow:hidden;
+    transition:all 0.3s;
+}
+
+.headerMenu_infoTxt p:last-child a span{
+    width:300px;
+    height:1px;
+    background:#fff;
+    display:block;
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition:all 0.3s;
+}
+
+
+/* click header 800 */
+@media (min-width: 800px) {
+    .headerMenuInner{
+        padding: 0 3vw;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerMenu_txt{
+        height:284px;
+        font-size:18px;
+        margin-bottom:0;
+    }
+
+    .headerMenu_txt p:first-child{
+        font-size:80px;
+        margin-bottom:40px;
+    }
+}
+
+/* click header 1400 */
+@media (min-width: 1400px) {
+    .headerMenuInner{
+        max-width:1400px;
+        padding: 0 0;
+    }
+
+    .headerMenu_txt{
+        height:405px;
+    }
+
+    .headerMenu_infoTit{
+        font-size:40px;
+        line-height:140%;
+        margin-bottom:100px;
+    }
+
+    .headerMenu_infoTxt{
+        font-size:16px;
+        margin-bottom:30px;
+    }
+
+    .headerMenu_infoTxt p:last-child a{
+        font-size:30px;
+        width:400px;
+        height:44px; 
+    }
+
+    .headerMenu_infoTxt p:last-child a span{
+        width:400px;
+        height:1.5px;
+        background:#fff;
+        display:block;
+        position:absolute;
+        bottom:0;
+        left:-400px;
+        transition:all 0.3s;
+    }
+
+    .headerMenu_infoTxt p:last-child a:hover span{
+        animation:contactAni 0.8s ease forwards;
+    }
+}
+
+
+/* ---------- footer ---------- */
+/* ----- footer 360 ----- */
+footer{
+    width:100%;
+    min-width:360px;
+    padding:80px 30px; 
+    background-color:#191919;
+    border-top:0.5px solid #444;
+    transition: all 0.3s;
+}
+
+.footerDisplay_left{
+    margin-bottom:80px;
+    font-family: 'afterglow','Castoro',serif;
+    font-size:48px;
+    line-height: 120%;
+    color:#ECE9E3;
+}
+
+.footerDisplay_rightT{
+    margin-bottom:40px;
+    font-size: 16px;
+    line-height:140%;
+    color:#fff;
+}
+
+.footerDisplay_rightT span{
+    font-size: 18px;
+    font-weight:600;
+}
+
+.footerDisplay_rightInfo{
+    font-size:14px;
+    line-height:160%;
+    color:#888;
+    margin-bottom:30px;
+}
+
+.footerDisplay_rightInfo p:last-child a{
+    font-size:16px;
+    line-height:160%;
+    color:#ECE9E3;
+    text-decoration: underline;
+}
+
+
+.footerTxt{
+    margin-top:60px;
+    font-size:12px;
+    line-height:140%;
+    color:#666;
+}
+
+.footerTxt div{
+    margin-bottom:30px;
+}
+
+
+/* footer 800 */
+@media (min-width: 800px) {
+    .footerDisplay{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+/* footer 1400 */
+@media (min-width: 1400px) {
+    footer{
+        padding:120px 3vw;
+    }
+
+    .footerDisplay_left{
+        font-size:80px;
+        margin-bottom:0;
+    }
+
+    .footerDisplay_rightT{
+        font-size: 22px;
+    }
+    
+    .footerDisplay_rightT span{
+        font-size: 24px;
+    }
+    
+    .footerDisplay_rightInfo{
+        font-size:16px;
+    }
+    
+    .footerDisplay_rightInfo p:last-child a{
+        font-size:18px;
+    }
+}

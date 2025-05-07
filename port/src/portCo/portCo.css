@@ -1,0 +1,763 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    /* 가장 굵은 굵기 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    /* 일반 굵기, 400과 동일 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    /* 가장 가는 굵기 */
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'afterglow', serif;
+    src: url(../font/Afterglow-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+.castoro-regular {
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ----- 메인 360 ----- */
+#wrap{
+    width:100%;
+    min-width:360px;
+}
+
+
+/* ----- seection01 main 360 ----- */
+
+/* .secMain img{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+} */
+
+.secMain{
+    width:100%;
+    height:138vw;
+    background-image: url(images/portCo_mainMob.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/* seection01 main 1000 */
+@media (min-width: 1000px) {
+    .secMain{
+        height:52vw;
+        background-image: url(images/portCo_mainPc.png);
+    }
+}
+
+
+
+
+
+/* ----- seection02 main info 360 ----- */
+.secMainInfo{
+    width:100%;
+}
+
+.secMainInfoInner{
+    width:100%;
+    margin:0 auto;
+    padding: 80px 30px;
+}
+
+.secMainInfo_tit{
+    font-size:36px;
+    line-height:120%;
+    margin-bottom:60px;
+}
+
+.secMainInfo_table caption{
+    display:none;
+}
+
+.secMainInfo_table{
+    width:100%;
+}
+
+.secMainInfo_table tr{
+    margin-bottom:20px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.secMainInfo_table tr .tableBox_tit{
+    width:32%;
+    font-size:16px;
+    line-height:24px;
+    font-weight:700;
+}
+
+.secMainInfo_table tr td:last-child{
+    width: 68%;
+    font-size:16px;
+    line-height:24px;
+}
+
+.secMainInfo_txt{
+    margin-top:40px;
+    font-size:16px;
+    line-height:160%;
+    text-align: justify;
+}
+
+/* seection02 main info 1000 */
+@media (min-width: 1000px) {
+    .secMainInfoInner{
+        max-width:1000px;
+        padding: 140px 0;
+    }
+
+    .secMainInfo_tit{
+        font-size:50px;
+    }
+
+    .secMainInfo_table tr{
+        margin-bottom:12px;
+        display:flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .secMainInfo_table tr .tableBox_tit{
+        width:12%;
+        font-size:16px;
+        line-height:24px;
+        font-weight:700;
+    }
+    
+    .secMainInfo_table tr td:last-child{
+        width: 88%;
+        font-size:16px;
+        line-height:24px;
+    }
+}
+
+
+/* ----- seection03 secPreviewLogo 360 ----- */
+.secPreviewLogo{
+    width:100%;
+    padding:20vw 0;
+    background-color: #F7F7F7;
+}
+
+.secPreviewLogo div{
+    width:60%;
+    margin:0 auto;
+}
+
+.secPreviewLogo div img{
+    width:100%;
+    height:auto;
+}
+
+/* seection03 secPreviewLogo 1000 */
+@media (min-width: 1000px) {
+    .secPreviewLogo{
+        padding: 140px 0;
+    }
+    
+    .secPreviewLogo div{
+        width:360px;
+        margin:0 auto;
+    }
+    
+    .secPreviewLogo div img{
+        width:100%;
+        height:auto;
+    }
+}
+
+/* ----- seection04 secLogoInfo 360 ----- */
+.secLogoInfo{
+    width:100%;
+    padding:80px 30px;
+}
+
+.secLogoInfoInner{
+    margin:0 auto;
+}
+
+.secLogoInfo_img{
+    width:100%;
+    margin:80px auto 0;
+}
+
+.secLogoInfo_img > p:first-child{
+    margin-bottom:40px;
+}
+
+
+.secLogoInfo_img img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+/* seection04 secLogoInfo 1000 */
+@media (min-width: 1000px) {
+    .secLogoInfo{
+        width:100%;
+        padding:140px 0;
+    }
+
+    .secLogoInfoInner{
+        max-width:1000px;
+    }
+
+    .secLogoInfo_img{
+        width:800px;
+    }
+
+    .secLogoInfo_img > p:first-child{
+        margin-bottom:120px;
+    }
+    
+}
+
+
+/* ----- seection05 secLogoMockup 360 ----- */
+.secLogoMockup{
+    width:100%;
+}
+
+.secLogoMockup_blue, .secLogoMockup_yellow{
+    width:100%;
+    padding:14vw 30px;
+}
+
+.secLogoMockup_blue{
+    background-color: #F7F7F7;
+}
+
+.secLogoMockup_yellow{
+    background-color: #222;
+}
+
+.secLogoMockup_blue p, .secLogoMockup_yellow p{
+    width:100%;
+    margin:0 auto;
+}
+
+.secLogoMockup_blue img, .secLogoMockup_yellow img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+/* secLogoMockup_mockup */
+.secLogoMockup_mockup{
+    width:100%;
+}
+
+.secLogoMockup_mockup p{
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.secLogoMockup_mockup img{
+    width:200%;
+    height:auto;
+    object-fit: cover;
+}
+
+
+/* seection05 secLogoMockup 1000 */
+@media (min-width: 1000px) {
+    .secLogoMockup_blue, .secLogoMockup_yellow{
+        padding:140px 0;
+    }
+    
+    .secLogoMockup_blue p, .secLogoMockup_yellow p{
+        width:1000px;
+    }
+
+    /* secLogoMockup_mockup */
+    .secLogoMockup_mockup img{
+        width:100%;
+    }
+    
+}
+
+
+
+/* ----- seection06 secPagePre 360 ----- */
+.secPagePre{
+    width:100%;
+}
+
+/* secPagePre_illu */
+.secPagePre_illu{
+    width:80%;
+    margin:0 auto;
+}
+
+.secPagePre_illu img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+
+/* secPagePre_figma */
+.secPagePre_figma{
+    width:100%;
+    margin:100px auto;
+}
+
+.secPagePre_figmaImg{
+    width:80%;
+    margin: 0 auto 60px;
+}
+
+.secPagePre_figmaImg img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+.secPagePre_figmaMov{
+    width:80%;
+    height:164vw;
+    margin:0 auto;
+    overflow: hidden;
+    border:1px solid #aaa;
+    border-radius: 20px;
+}
+
+.secPagePre_figmaMov video{
+    width:100%;
+    height:auto;
+}
+
+
+/* seection06 secPagePre 1000 */
+@media (min-width: 1000px) {
+    .secPagePre_figma{
+        max-width:1000px;
+        margin:140px auto;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .secPagePre_figmaImg{
+        width:670px;
+        margin: 0 0 0;
+    }
+
+    .secPagePre_figmaMov{
+        width:270px;
+        height:555px;
+        margin:0 0;
+    }
+}
+
+/* ----- seection07 secPagePreview 360 ----- */
+.secPagePreview{
+    background-color:#E7E7E7;
+    padding: 60px 30px;
+}
+
+.secPagePreview div{
+    width:100%;
+    margin:0 auto;
+}
+
+.secPagePreview div img{
+    width:100%;
+    height:auto;
+}
+
+/* seection07 secPagePreview 1000 */
+@media (min-width: 1000px) {
+    .secPagePreview{
+        padding: 140px 0;
+    }
+    
+    .secPagePreview div{
+        max-width:1000px;
+        margin:0 auto;
+    }
+    
+    .secPagePreview div img{
+        width:100%;
+        height:auto;
+    }
+}
+
+
+/* ----- seection08 secPageMockup 360 ----- */
+.secPageMockup {
+    width:100%;
+}
+
+.secPageMockup div{
+    width:100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;   
+}
+
+.secPageMockup img{
+    width:200%;
+    height:auto;
+    object-fit: cover;
+    transform: translateX(3%);
+    transition: all 0.3s;
+}
+
+/* seection06 secPageMockup 1000 */
+@media (min-width: 1000px) {
+    .secPageMockup img{
+        width:110%;
+    }
+}
+
+/* ----- seection07 secPageWeb 360 ----- */
+.secPageWeb{
+    width:100%;
+    padding:140px 0;
+    background-color:#E8E8E8;
+    overflow: hidden;
+}
+
+.secPageWeb p{
+    width:100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+}
+
+.secPageWeb img{
+    width:120%;
+    height:auto;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+
+/* seection07 secPageWeb 1000 */
+@media (min-width: 1000px) {
+    .secPageWeb{
+        padding:160px 0;
+    }
+
+    .secPageWeb img{
+        width:110%;
+    }
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- seection05 secLeafletMockup 360 ----- */
+/* 리플렛 1장 */
+.secLeafletMockup{
+    background-color: blue;
+    margin-top:200px;
+    min-width:360px;
+    width:100%;
+    position:relative;
+}
+
+.secLeafletMockup_img{
+    width:70%;
+    height:auto;
+    position:absolute;
+    top:-30vw;
+    left:50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.secLeafletMockup_img img{
+    width:100%;
+    min-height:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+.secLeafletMockup_bg{
+    margin-top:30vw;
+    width:100%;
+    height:60vw;
+    transition: all 0.3s;
+}
+
+
+/* 리플렛 6장 */
+.secLeafletMockup_6page{
+    background-color: #E3E3E3;
+}
+
+.secLeafletMockup_6pageInner{
+    padding:60px 30px;
+    margin:0 auto; 
+}
+
+.secLeafletMockup_6page img{
+    width:100%;
+    height:auto;
+}
+
+
+/* seection06 secPcMockupImg 1000 */
+@media (min-width: 1000px) {
+    /* 리플렛 1장 */
+    .secLeafletMockup_img{
+        width:500px;
+        height:590px;
+        top:-200px;
+    }
+
+    .secLeafletMockup_bg{
+        height:440px;
+        margin-top:200px;
+    }
+
+    /* 리플렛 6장 */
+    .secLeafletMockup_6pageInner{
+        max-width:1000px;
+        padding:100px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ----- seection06 secBoxMockup 360 ----- */
+.secBoxMockup{
+    width:100%;
+}
+
+.secBoxMockup_carton{
+    width:80%;
+    padding:80px 0;
+    margin:0 auto;
+}
+
+.secBoxMockup_carton img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    transform: translateX(3%);
+}
+
+.secPcScreenInner{
+    padding:60px 30px;
+    margin:0 auto; 
+}
+
+.secPcScreen img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+/* seection06 secBoxMockup 1000 */
+@media (min-width: 1000px) {
+    .secBoxMockup_carton{
+        width:660px;
+        padding:160px 0;
+    }
+}
+
+
+
+/* ----- seection07 secBoxMockup_rrp 360 ----- */
+.secBoxMockup_rrp {
+    width:100%;
+}
+
+.secBoxMockup_rrp div{
+    width:100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;   
+}
+
+.secBoxMockup_rrp img{
+    width:220%;
+    height:auto;
+    object-fit: cover;
+    transform: translateX(3%);
+    transition: all 0.3s;
+}
+
+/* seection06 secBoxMockup 1000 */
+@media (min-width: 1000px) {
+    .secBoxMockup_rrp img{
+        width:120%;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- 공통 코드 ---------- */
+
+/* ------ tit공통 360 ------ */
+.secTitBox_tit{
+    font-size:40px;
+    font-weight:700;
+    line-height:120%;
+    margin-bottom:40px;
+}
+
+.secTitBox_sub{
+    font-size:16px;
+    line-height:140%;
+    text-align: justify;
+}
+
+.secTitBox_sub > p:first-child{
+    margin-bottom:40px;
+}
+
+/* tit공통 1000 */
+@media (min-width: 1000px) {
+    .secTitBox_tit{
+        font-size:50px;
+        line-height:110%;
+        margin-bottom:30px;
+    }
+}
+
+
+
+
+
+/* ------ mob, pc용 구분 360 ------ */
+.moNonView{
+    display:none;
+}
+
+/* mob, pc용 구분 800 */
+@media (min-width: 1000px) {
+    .tabNonView{
+        display:none;
+    }
+}
+
+/* mob, pc용 구분 1000 */
+@media (min-width: 1000px) {
+    .moNonView{
+        display:block;
+    }
+
+    .pcNonView{
+        display:none;
+    }
+}

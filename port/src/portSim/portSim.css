@@ -1,0 +1,512 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    /* 가장 굵은 굵기 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    /* 일반 굵기, 400과 동일 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    /* 가장 가는 굵기 */
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'afterglow', serif;
+    src: url(../font/Afterglow-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+.castoro-regular {
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ----- 메인 360 ----- */
+#wrap{
+    width:100%;
+    min-width:360px;
+}
+
+
+/* ----- seection01 main 360 ----- */
+
+/* .secMain img{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+} */
+
+.secMain{
+    width:100%;
+    height:138vw;
+    background-image: url(images/portSim_mainMob.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/* seection01 main 1000 */
+@media (min-width: 1000px) {
+    .secMain{
+        height:52vw;
+        background-image: url(images/portSim_mainPc.png);
+    }
+}
+
+
+
+
+
+/* ----- seection02 main info 360 ----- */
+.secMainInfo{
+    width:100%;
+}
+
+.secMainInfoInner{
+    width:100%;
+    margin:0 auto;
+    padding: 80px 30px;
+}
+
+.secMainInfo_tit{
+    font-size:36px;
+    line-height:120%;
+    margin-bottom:60px;
+}
+
+.secMainInfo_table caption{
+    display:none;
+}
+
+.secMainInfo_table{
+    width:100%;
+}
+
+.secMainInfo_table tr{
+    margin-bottom:20px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.secMainInfo_table tr .tableBox_tit{
+    width:32%;
+    font-size:16px;
+    line-height:24px;
+    font-weight:700;
+}
+
+.secMainInfo_table tr td:last-child{
+    width: 68%;
+    font-size:16px;
+    line-height:24px;
+}
+
+.secMainInfo_txt{
+    margin-top:40px;
+    font-size:16px;
+    line-height:160%;
+    text-align: justify;
+}
+
+/* seection02 main info 1000 */
+@media (min-width: 1000px) {
+    .secMainInfoInner{
+        max-width:1000px;
+        padding: 140px 0;
+    }
+
+    .secMainInfo_tit{
+        font-size:50px;
+    }
+
+    .secMainInfo_table tr{
+        margin-bottom:12px;
+        display:flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .secMainInfo_table tr .tableBox_tit{
+        width:12%;
+        font-size:16px;
+        line-height:24px;
+        font-weight:700;
+    }
+    
+    .secMainInfo_table tr td:last-child{
+        width: 88%;
+        font-size:16px;
+        line-height:24px;
+    }
+}
+
+
+/* ----- seection03 secPreview 360 ----- */
+.secPreview{
+    width:100%;
+    padding:14vw 0;
+    background-image:url(images/secPreview_bgMob.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100%;
+}
+
+.secPreview div{
+    width:80%;
+    margin:0 auto;
+}
+
+.secPreview div img{
+    width:100%;
+    height:auto;
+}
+
+/* seection03 secPreview 1000 */
+@media (min-width: 1000px) {
+    .secPreview{
+        padding: 140px 0;
+        background-image:url(images/secPreview_bgPc.png);
+    }
+    
+    .secPreview div{
+        width:500px;
+        margin:0 auto;
+    }
+    
+    .secPreview div img{
+        width:100%;
+        height:auto;
+    }
+}
+
+/* ----- seection04 secBottleView 360 ----- */
+.secBottleView{
+    width:100%;
+    padding:80px 30px 80px;
+}
+
+.secBottleViewInner{
+    margin:0 auto;
+}
+
+.secBottleView_img{
+    width:100%;
+    margin:80px auto 120px;
+}
+
+
+.secBottleView_img img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+/* seection04 secBottleView 1000 */
+@media (min-width: 1000px) {
+    .secBottleView{
+        padding:140px 0 40px;
+    }
+    .secBottleViewInner{
+        max-width:1000px;
+    }
+
+    .secBottleView_img{
+        width:800px;
+    }
+
+    .secBottleView_img > p{
+        margin-bottom:120px;
+    }
+    
+}
+
+
+/* ----- seection05 secLeafletMockup 360 ----- */
+/* 리플렛 1장 */
+.secLeafletMockup{
+    min-width:360px;
+    width:100%;
+    position:relative;
+}
+
+.secLeafletMockup_img{
+    width:70%;
+    height:auto;
+    position:absolute;
+    top:-30vw;
+    left:50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.secLeafletMockup_img img{
+    width:100%;
+    min-height:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+.secLeafletMockup_bg{
+    margin-top:30vw;
+    width:100%;
+    height:60vw;
+    background-color: #E3E3E3;
+    transition: all 0.3s;
+}
+
+
+/* 리플렛 6장 */
+.secLeafletMockup_6page{
+    background-color: #E3E3E3;
+}
+
+.secLeafletMockup_6pageInner{
+    padding:60px 30px;
+    margin:0 auto; 
+}
+
+.secLeafletMockup_6page img{
+    width:100%;
+    height:auto;
+}
+
+
+/* seection06 secPcMockupImg 1000 */
+@media (min-width: 1000px) {
+    /* 리플렛 1장 */
+    .secLeafletMockup_img{
+        width:500px;
+        height:590px;
+        top:-200px;
+    }
+
+    .secLeafletMockup_bg{
+        height:440px;
+        margin-top:200px;
+    }
+
+    /* 리플렛 6장 */
+    .secLeafletMockup_6pageInner{
+        max-width:1000px;
+        padding:100px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ----- seection06 secBoxMockup 360 ----- */
+.secBoxMockup{
+    width:100%;
+}
+
+.secBoxMockup_carton{
+    width:80%;
+    padding:80px 0;
+    margin:0 auto;
+}
+
+.secBoxMockup_carton img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    transform: translateX(3%);
+}
+
+.secPcScreenInner{
+    padding:60px 30px;
+    margin:0 auto; 
+}
+
+.secPcScreen img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+/* seection06 secBoxMockup 1000 */
+@media (min-width: 1000px) {
+    .secBoxMockup_carton{
+        width:660px;
+        padding:160px 0;
+    }
+}
+
+
+
+/* ----- seection07 secBoxMockup_rrp 360 ----- */
+.secBoxMockup_rrp {
+    width:100%;
+}
+
+.secBoxMockup_rrp div{
+    width:100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;   
+}
+
+.secBoxMockup_rrp img{
+    width:220%;
+    height:auto;
+    object-fit: cover;
+    transform: translateX(3%);
+    transition: all 0.3s;
+}
+
+/* seection06 secBoxMockup 1000 */
+@media (min-width: 1000px) {
+    .secBoxMockup_rrp img{
+        width:120%;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- 공통 코드 ---------- */
+
+/* ------ tit공통 360 ------ */
+.secTitBox_tit{
+    font-size:40px;
+    font-weight:700;
+    line-height:120%;
+    margin-bottom:40px;
+}
+
+.secTitBox_sub{
+    font-size:16px;
+    line-height:140%;
+    text-align: justify;
+}
+
+.secTitBox_sub > p:first-child{
+    margin-bottom:40px;
+}
+
+/* tit공통 1000 */
+@media (min-width: 1000px) {
+    .secTitBox_tit{
+        font-size:50px;
+        line-height:110%;
+        margin-bottom:30px;
+    }
+}
+
+
+
+
+
+/* ------ mob, pc용 구분 360 ------ */
+.moNonView{
+    display:none;
+}
+
+/* mob, pc용 구분 800 */
+@media (min-width: 1000px) {
+    .tabNonView{
+        display:none;
+    }
+}
+
+/* mob, pc용 구분 1000 */
+@media (min-width: 1000px) {
+    .moNonView{
+        display:block;
+    }
+
+    .pcNonView{
+        display:none;
+    }
+}

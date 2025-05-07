@@ -94,7 +94,7 @@ header{
 }
 
 .header_tit img{
-    width:98%;
+    width:100%;
     height:auto;
     object-fit: cover;
 }
@@ -184,6 +184,10 @@ header{
     margin-bottom:50px;
 }
 
+.headerMenu_infoTit span{
+    font-size:20px;
+}
+
 .headerMenu_infoTxt{
     font-size:14px;
     line-height:140%;
@@ -254,6 +258,12 @@ header{
         margin-bottom:100px;
     }
 
+    .headerMenu_infoTit span{
+        font-size:26px;
+    }
+
+
+
     .headerMenu_infoTxt{
         font-size:16px;
         margin-bottom:30px;
@@ -311,6 +321,7 @@ footer{
 .footerDisplay_rightT span{
     font-size: 18px;
     font-weight:600;
+    line-height:180%;
 }
 
 .footerDisplay_rightInfo{

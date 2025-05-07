@@ -200,7 +200,7 @@
     }
 
     .TxtBox_SubTit{
-        font-size:24px;
+        font-size:26px;
         line-height:30px;
     }
 
@@ -224,8 +224,9 @@
 
 .secIntro_tit{
     font-size: 7.2vw;
-    font-weight:700;
+    font-weight:600;
     line-height:140%;
+    letter-spacing: -1px;
 }
 
 .secIntro_subTit{
@@ -258,11 +259,11 @@
 
     .secIntro_tit{
         font-size: 3.2vw;
-        width:44%;
+        width:46%;
     }
 
     .secIntro_subTit{
-        width: 56%;
+        width: 54%;
         margin-top:0;
     }
 
@@ -282,7 +283,7 @@
     }
 
     .secIntro_tit{
-        font-size:50px;
+        font-size:48px;
     }
 
     .secIntro_subTit{
@@ -409,7 +410,7 @@
     }
 
     .secInfo_RB{
-        width:56%;
+        width:54%;
     }
 
     .secInfo_RB_tit{

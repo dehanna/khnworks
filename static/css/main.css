@@ -87,7 +87,7 @@
     width:100%;
     height:100vh;
     position: relative;
-    background-color:#F3EEE8;
+    background-color:#fdfaf6;
 }
 
 .secMain_TxtBox{
@@ -96,6 +96,7 @@
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+    color:#1e2cc1;
 }
 
 .TxtBox_Tit{
@@ -121,7 +122,7 @@
     display:block;
     width:0; 
     height:4px;
-    background:#222;
+    background:#1e2cc1;
     position:absolute;
     bottom:5px;
     left:0;
@@ -130,16 +131,22 @@
 
 .secMain_Arrow{
     width:60px;
-    height:auto;
+    height:108px;
     position: absolute;
     top:75%;
     left:50%;
     transform: translateX(-50%);
     transition:all 3s;
+    background-image:url(../img/main_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
 }
 
 .secMain_Arrow.move{
     top:93%; 
+    background-image:url(../img/main_arrowBlack.png);
 }
 
 .secMain_Arrow img{
@@ -195,8 +202,8 @@
     } */
 
     .TxtBox_Tit{
-        font-size:140px;
         margin-bottom:20px;
+        font-size:140px;
     }
 
     .TxtBox_SubTit{
@@ -210,6 +217,7 @@
 
     .secMain_Arrow{
         width:110px;
+        height:200px;
     }
 }
 
@@ -219,7 +227,7 @@
 .secIntro{
     width:100%;
     padding:80px 30px 80px;
-    background-color:#ECE9E3;
+    background-color:#f5f3ef;
 }
 
 .secIntro_tit{
@@ -259,11 +267,11 @@
 
     .secIntro_tit{
         font-size: 3.2vw;
-        width:46%;
+        width:42%;
     }
 
     .secIntro_subTit{
-        width: 54%;
+        width: 58%;
         margin-top:0;
     }
 
@@ -279,7 +287,7 @@
     }
 
     .secIntroInner{
-        max-width:1400px;
+        max-width:1250px;
     }
 
     .secIntro_tit{
@@ -287,7 +295,7 @@
     }
 
     .secIntro_subTit{
-        font-size:24px;
+        font-size:23px;
         line-height:160%;
         letter-spacing: 0px;
     }
@@ -304,7 +312,7 @@
 .secInfo{
     width:100%;
     padding:80px 30px;
-    background-color:#ECE9E3;
+    background-color:#f5f3ef;
 }
 
 .secInfo_LB{
@@ -320,7 +328,7 @@
 }
 
 .secInfo_RB > div{
-    border-top:2px solid #222;
+    border-top:1px solid #222;
     padding-top:30px;
     margin-top:30px;
 }
@@ -387,7 +395,7 @@
     }
 
     .secInfo_RB{
-        width:56%;
+        width:58%;
     }
 
     .RB_contBox tbody td{
@@ -399,7 +407,7 @@
 /* seection03 info 1200 */
 @media (min-width: 1200px) {
     .secInfoInner{
-        max-width:1400px;
+        max-width:1250px;
         height:100%;
         margin:0 auto;
     }
@@ -410,7 +418,7 @@
     }
 
     .secInfo_RB{
-        width:54%;
+        width:58%;
     }
 
     .secInfo_RB_tit{
@@ -515,11 +523,6 @@
         padding:100px 3vw;
     }
 
-    .secInfoInner{
-        max-width:1400px;
-        height:100%;
-        margin:0 auto;
-    }
     .secWorksTit{
         font-size:120px;
         margin-bottom:80px;
@@ -537,6 +540,7 @@
         width:31%;
         height:22vw;
         margin-bottom:0;
+        border-radius: 40px;
     }
 
     .secWorksWrap li a{
@@ -554,8 +558,17 @@
 
 /* seection04 works 1200 */
 @media (min-width: 1200px) {
+    /* .secWorksInner{
+        max-width:1600px;
+        margin:0 auto;
+    } */
+
+    .secWorksWrap li a{
+        height:21.8vw;
+    }
+
     .secWorksWrap li a .secWorksWrap_txt{
-        height:22vw;
+        height:21.8vw;
         background-color:rgba(34,34,34, 0.6);
         opacity:0;
     }

@@ -78,7 +78,7 @@ header{
     min-width:360px;
     height: 80px;
     padding:0 30px; 
-    background-color:rgba(255, 255, 255, 0.1);
+    background-color:rgba(255, 255, 255, 0);
     position:fixed;
     top:0;
     left:0;
@@ -108,6 +108,8 @@ header{
     background-color:#111;
     border-radius:30px;
     transition: all 0.2s;
+    position: relative;
+    z-index: 999;
 }
 
 /* header 800 */
@@ -152,6 +154,8 @@ header{
     left:0; 
     z-index: 998;
 }
+
+
 
 .headerMenuInner{
     width:100%;
@@ -290,6 +294,11 @@ header{
         animation:contactAni 0.8s ease forwards;
     }
 }
+
+
+
+
+
 
 
 /* ---------- footer ---------- */

@@ -153,7 +153,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-
 }
 
 .secMain_Arrow.move{
@@ -177,39 +176,6 @@
 
 /* seection01 main 1300 */
 @media (min-width: 1300px) {
-    /* .secMain{
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        padding:0 3vw;
-    }
-
-    .secMain_TxtBox{
-        width:auto;
-        position:static;
-        transform: translate(0,0);
-    }
-
-    .TxtBox_Tit{
-        font-size:140px;
-        margin-bottom:20px;
-    }
-
-    .TxtBox_SubTit{
-        font-size:24px;
-        line-height:30px;
-    }
-
-    .TxtBox_Tit span em{
-        height:8px;
-    }
-
-    .secMain_Arrow{
-        width:130px;
-        position: static;
-        transform: translateX(0);
-    } */
-
     .TxtBox_Tit{
         font-size:76px;
     }
@@ -284,9 +250,8 @@
         width: 54%;
         margin-top:0;
     }
-
-
 }
+
 
 /* seection02 intro 1300 */
 @media (min-width: 1300px) {
@@ -306,53 +271,66 @@
         font-size:22px;
         line-height:160%;
     }
-
 }
 
 
 
-
-/* ----- seection03 info 360 ----- */
-.secInfo{
+/* ----- seection03 resume 360 ----- */
+.secResume{
     width:100%;
-    padding:80px 30px;
-    background-color:#F0EFED;
+    padding:60px 0;
+    background-color: #F0EFED;
 }
 
-.secInfo_LB{
-    width:90%;
-    margin:0 5% 10%;
-}
-
-.secInfo_LB img{
-    width:100%;
-    height:auto;
-    object-fit: cover;
-    transition: all 0.3s;
-}
-
-.secInfo_RB > div{
-    border-top:1px solid #444;
-    padding-top:30px;
-    margin-top:30px;
-}
-
-.secInfo_RB_tit{
-    margin-bottom:10px;
-    font-size:26px;
+.secResume_top{
+    padding:0 30px 40px;
+    font-size:24px;
     line-height:120%;
     font-weight:600;
 }
 
-.RB_contBox{
+.secResume_top ul{
+    margin-top:20px;
+}
+
+.secResume_top li{
+    font-size:18px;
+    line-height:140%;
+}
+
+.secResume_top li span{
+    display:inline-block;
+    width:60px;
+    color:#666;
+    font-size:16px;
+    font-weight:300;
+}
+
+.secResume_flexbox{
+    padding:20px 30px;
+}
+
+.secResume_FBleft > div, .secResume_FBright > div{
+    border-top:1px solid #444;
+    padding-top:20px;
+}
+
+.secResume_tit{
+    margin-bottom:10px;
+    font-size:22px;
+    line-height:120%;
+    font-weight:600;
+}
+
+.secResume_contBox{
     width:100%;
 }
 
-.RB_contBox caption{
+.secResume_contBox caption{
     display:none;
 }
 
-.RB_contBox tbody tr{
+.secResume_contBox tbody tr{
     margin-bottom:20px;
     display:flex;
     flex-wrap: wrap;
@@ -360,102 +338,141 @@
     text-align: left;
 }
 
-.RB_contBox tbody .RB_contBox_date{
+.secResume_contBox tbody .secResume_contBox_date{
     font-size:14px;
-    line-height:20px;
+    line-height:24px;
     color:#888;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
 }
 
-.RB_contBox tbody td{
+.secResume_contBox tbody td{
     font-size:16px;
-    line-height:20px;
+    line-height:24px;
     color:#222;
     margin-bottom:5px;
     letter-spacing: -0.5px;
+    vertical-align: middle;
 }
 
-.RB_contBox tbody td > p:last-child{
+.secResume_contBox tbody td > p:last-child{
     color:#666;
     margin-top:5px;
 }
 
 
-
-/* seection03 info 800 */
+/* seection03 resume 800 */
 @media (min-width: 800px) {
-    .secInfoInner{
-        height:100%;
+    .secResume{
+        padding:100px 0;
+    }
+
+    .secResume_top ul{
+        margin-top:30px;
+        display:flex;
+        align-items: center;
+    }
+
+    .secResume_top li{
+        margin-right:12px;
+        line-height:24px;
+    }
+
+    .secResume_top li::after{
+        display:inline-block;
+        content:'';
+        width:1px;
+        height:18px;
+        background-color:#aaa;
+        margin-left:12px;
+        vertical-align: middle;
+    }
+
+    .secResume_top li:last-child::after{
+        display:none;
+    }
+
+    .secResume_top li span{
+        width:auto;
+        margin-right:10px;
+    }
+
+    .secResume_flexbox{
         display:flex;
         justify-content: space-between;
     }
 
-    .secInfo_LB{
-        width: 36%;
-        height:26vh;
-        margin:0;
-        position:-webkit-sticky;
-        position:sticky;
-        top:0;
+    .secResume_FBleft, .secResume_FBright{
+        width:49%;
     }
 
-    .secInfo_RB{
-        width:58%;
+    .secResume_certi, .secResume_skill{
+        margin-top:6%;
     }
 
-    .RB_contBox tbody td{
+    .secResume_contBox tbody td{
         letter-spacing: 0px;
     }
-    
 }
 
-/* seection03 info 1200 */
-@media (min-width: 1200px) {
-    .secInfoInner{
-        max-width:1250px;
-        height:100%;
+
+/* seection03 resume 1300 */
+@media (min-width: 1300px) {
+    .secResumeInner{
+        max-width:1300px;
         margin:0 auto;
     }
 
-    .secInfo_LB{
-        width: 30%;
-        height:35vh;
+    .secResume_top{
+        padding:0 0 50px;
+        font-size:42px;
+        line-height:130%;
     }
 
-    .secInfo_RB{
-        width:58%;
+    .secResume_flexbox{
+        padding:0 0;
     }
 
-    .secInfo_RB_tit{
+    .secResume_FBleft, .secResume_FBright{
+        width:47%;
+    }
+
+    .secResume_tit{
         margin-bottom:20px;
-        font-size:32px;
+        font-size:26px;
     }
 
-    .RB_contBox tbody tr{
-        margin-bottom:10px;
+    .secResume_contBox tbody tr{
+        margin-bottom:14px;
         flex-wrap: nowrap;
         flex-direction: row;
-        align-items: center;
+        align-items: top;
     }
 
-    .RB_contBox tbody .RB_contBox_date{
-        font-size:18px;
-        line-height:26px;
-        width:25%;
+    .secResume_contBox tbody .secResume_contBox_date{
+        width:26%;
+        font-size:16px; 
     }
     
-    .RB_contBox tbody td{
+    .secResume_contBox tbody td{
+        width:74%;
         font-size:18px;
-        line-height:26px;
+        margin-bottom:0px;
     }
 
-    .RB_contBox tbody td > p{
+    .secResume_contBox tbody td > p{
         display:inline-block;
     }
 
-    .RB_contBox tbody td > p:last-child{
+    .secResume_contBox tbody td > p:last-child{
         margin-bottom:0px;
     }
 }
+
+
+
+
+
 
 
 

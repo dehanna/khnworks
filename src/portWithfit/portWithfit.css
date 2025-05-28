@@ -89,7 +89,7 @@
 .secMain{
     width:100%;
     height:138vw;
-    background-image: url(images/portKpop_mainMob.png);
+    background-image: url(images/portWithfit_mainMob.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
@@ -100,7 +100,7 @@
 @media (min-width: 1000px) {
     .secMain{
         height:52vw;
-        background-image: url(images/portKpop_mainPc.png);
+        background-image: url(images/portWithfit_mainPc.jpg);
     }
 }
 
@@ -281,7 +281,7 @@
     transition: all 0.3s;
 }
 
-/* seection04 secWhitepaperInfo 1000 */
+
 @media (min-width: 1000px) {
     .secWhitepaperInfoInner{
         max-width:1000px;
@@ -297,6 +297,17 @@
     }
     
 }
+
+/* seection secWholeImg 360 */
+.secWholeImg > div{
+    width:100%;
+}
+
+.secWholeImg img{
+    width:100%;
+    height:auto;
+}
+
 
 
 

@@ -81,6 +81,27 @@
     min-width:360px;
 }
 
+#quickBtn {
+    width: 60px;
+    height:60px;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    background:url(../img/icon_quickBtn.png) no-repeat center/100%;
+    text-indent: -9999px;
+    border: none;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+#quickBtn:hover {
+  opacity:0.7;
+}
+
 
 /* ----- seection01 main 360 ----- */
 .secMain{
